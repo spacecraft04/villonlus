@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  .tendina {
+    position: relative;
+    display: inline-block;
+    background-color: rgb(208, 203, 203);
+    padding-right: 30px; 
+    cursor: pointer; /* riguarda il cursore quando si passa sopra il menu */
+  }
+
+  .tendina h3 {
+    margin: 0; 
+    padding: 8px 5px 8px 0; 
+    display: inline-block; 
+    border-right: 1px solid black; 
+  }
+
+  .freccia {
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #000 transparent transparent transparent; 
+  }
+  
+  .tendina-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9cc;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    right: 0;
+  }
+
+  .tendina-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .tendina-content a:hover {
+    background-color: #f1f1f1c0;
+  }
+  
+  .tendina:hover .tendina-content {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<div class="tendina">
+  <h3>Come contattarci</h3>
+  <div class="freccia"></div> <!-- freccia icona -->
+  <div class="tendina-content">
+    <a href="mailto:mortillarogiuseppe@virgilio.it">Email</a>
+    <a href="tel:3356283586">Telefono</a>
+    <a href="https://www.google.com/maps?q=Piazza+Parrocchia+13+Villaciambra">Posizione</a>
+  </div>
+</div>
+
+<script>
+  // mostra-chiudi 
+  function toggleTendina() {
+    var tendinaContent = document.querySelector('.tendina-content');
+    tendinaContent.style.display = (tendinaContent.style.display === "block") ? "none" : "block";
+  }
+
+  // chiudi il menu 
+  window.onclick = function(event) {
+    if (!event.target.matches('.tendina')) {
+      var tendinas = document.getElementsByClassName("tendina-content");
+      for (var i = 0; i < tendinas.length; i++) {
+        var openTendina = tendinas[i];
+        if (openTendina.style.display === 'block') {
+          openTendina.style.display = 'none';
+        }
+      }
+    }
+  }
+</script>
+
+<div id="Layer1" style="
+    position: relative;
+    bottom: -30px;           /* sposto 30px sotto la base della finestra */
+    left: 0;
+    width: 100%;
+    height: 150px;           /* un po' più alto per coprire */
+    background: rgba(0, 60, 30, 0.9); /* verde scuro trasparente */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    color: #cceccc;          /* verde chiarissimo per il testo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 -5px 15px rgba(0, 40, 10, 0.8);
+    z-index: 9999;
+    ">
+  
+  <!-- Logo + link Home -->
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; width: 140px;">
+    <img src="logo2.jpeg" alt="Logo" style="width: 90px; height: 80px; border-radius: 8px; box-shadow: 0 0 10px #4CAF50;">
+    <a href="/home" style="
+       color: #cceccc; 
+       font-size: 14px; 
+       font-weight: 600; 
+       text-decoration: none;
+       border: 2px solid #4CAF50;
+       padding: 6px 12px;
+       border-radius: 6px;
+       transition: background-color 0.3s, color 0.3s;
+    " 
+       onmouseover="this.style.backgroundColor='#4CAF50'; this.style.color='#003300';" 
+       onmouseout="this.style.backgroundColor='transparent'; this.style.color='#cceccc';"
+    >
+      Torna alla HOME
+    </a>
+  </div>
+
+  <!-- Seguici sui social -->
+  <div style="text-align: center; flex-grow: 1; max-width: 300px;">
+    <span style="font-size: 28px; font-weight: 700; display: block; margin-bottom: 12px; text-shadow: 1px 1px 3px #003300;">
+      SEGUICI SU
+    </span>
+    <a href="https://www.facebook.com/profile.php?id=100067935986311" target="_blank" rel="noopener noreferrer" style="display: inline-block; transition: transform 0.3s;">
+      <img src="Facebook_logo.png" alt="Facebook" style="width: 50px; height: 50px; filter: drop-shadow(0 0 3px #004400);">
+    </a>
+  </div>
+
+  <!-- Indirizzo -->
+  <div style="
+    border-left: 2px solid #4CAF50;
+    padding-left: 20px;
+    max-width: 240px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #aee6ae;
+    text-shadow: 0 0 4px #002200;
+  ">
+    <strong style="font-size: 16px; display: block; margin-bottom: 8px;">Villaciambra ONLUS</strong>
+    via Altofonte, 64 - Villaciambra<br>
+    90046 Monreale
+  </div>
+</div>
+
+
+
+</body>
+</html>
+
