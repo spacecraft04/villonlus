@@ -81,33 +81,35 @@
   header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     padding: 5px 10px;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 
-  header h1 {
-    font-size: 1rem;
+  header h1, header .logo {
+    font-size: 0.9rem;
     margin: 0;
-    padding: 0;
     white-space: nowrap;
   }
 
   nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 8px;
-    justify-content: flex-end;
-    margin-left: auto;
+    flex-wrap: nowrap;
+    white-space: nowrap;
   }
 
   nav a {
-    font-size: 0.8rem;   /* riduce la dimensione del testo */
+    font-size: 0.8rem;
     padding: 4px 6px;
     white-space: nowrap;
   }
 }
+
 
         /* SEZIONI */
         .section {
@@ -426,6 +428,7 @@
    
      
     
+
 
 
 
