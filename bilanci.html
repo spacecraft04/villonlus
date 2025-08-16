@@ -199,11 +199,136 @@
          text-decoration: underline;
       }
          
-      #Layer1 {
-         background-image: url('verdefooter.jpg');
-         background-size: cover;
-      }
-      
+   #Layer1 {
+        background: rgba(0, 60, 30, 0.9);
+        background-image: url('verdefooter.jpg');
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        color: #cceccc;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-shadow: 0 -5px 15px rgba(0, 40, 10, 0.8);
+        text-align: center;
+    }
+
+    /* OGNI BLOCCO DEL FOOTER */
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        max-width: 250px;
+        margin: 10px 0;
+    }
+
+    /* LOGO */
+    .logo-home img {
+        width: 90px;
+        height: 80px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #4CAF50;
+    }
+
+    /* BOTTONE HOME */
+    .logo-home a {
+        color: #cceccc;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        border: 2px solid #4CAF50;
+        padding: 6px 12px;
+        border-radius: 6px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .logo-home a:hover {
+        background-color: #4CAF50;
+        color: #003300;
+    }
+
+    /* SOCIAL */
+    .social span {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        text-shadow: 1px 1px 3px #003300;
+    }
+
+    .social img {
+        width: 50px;
+        height: 50px;
+        filter: drop-shadow(0 0 3px #004400);
+        transition: transform 0.3s;
+    }
+
+    .social img:hover {
+        transform: scale(1.1);
+    }
+
+    /* INDIRIZZO */
+    .address {
+        color: #aee6ae;
+        text-shadow: 0 0 4px #002200;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .address strong {
+        font-size: 16px;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    /* RESPONSIVE */
+@media (max-width: 768px) {
+   #Layer1 {
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+      gap: 8px;
+   }
+
+   .footer-section {
+      min-width: auto;
+      max-width: 33%;
+   }
+
+   .logo-home img {
+      width: 30px;
+      height: 30px;
+   }
+
+   .social span {
+      font-size: 12px;  /* ridotto SEGUICI SU */
+   }
+
+   .social img {
+      width: 25px;
+      height: 25px;
+   }
+
+   .logo-home a {
+      font-size: 10px;
+      padding: 2px 4px;
+   }
+
+   .address strong {
+      font-size: 12px; /* ridotto Villaciambra ONLUS */
+   }
+
+   .address {
+      font-size: 10px;
+      white-space: nowrap; /* niente a capo */
+   }
+}
+
+
    </style>
 
    <script type="text/javascript">
@@ -310,6 +435,7 @@
      
 
     
+
 
 
 
