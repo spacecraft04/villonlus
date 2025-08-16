@@ -5,8 +5,7 @@
 
 <head>
     <meta charset="UTF-8">
-   <meta name="viewport" content="width=1024">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="logo2.jpeg" type="image/x-icon">
 
     <title>Villaciambra onlus</title>
@@ -18,7 +17,6 @@
             font-family: Arial, sans-serif;
             background-color: #fff;
             color: #333;
-            min-width: 1024px;
         }
       /* Navbar Styles */
       nav {
@@ -77,7 +75,25 @@
             border-radius: 3px;
         }
 
-       
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background: rgba(255,255,255,0.95);
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            }
+            nav ul.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: flex;
+            }
+        }
 
         /* SEZIONI */
         .section {
@@ -230,7 +246,20 @@
     }
 
     /* RESPONSIVE */
-  
+    @media (max-width: 768px) {
+        #Layer1 {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-section {
+            max-width: 100%;
+        }
+
+        .social span {
+            font-size: 22px;
+        }
+    }
 </style>
 
      
@@ -350,9 +379,3 @@
    
      
     
-   
-     
-    
-
-        
-
