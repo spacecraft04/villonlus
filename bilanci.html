@@ -314,6 +314,31 @@
   margin: 0;
 }
 /* Responsive mobile */
+        @media (max-width: 768px) {
+   .contenitore1,
+   .contenitore2 {
+      width: 100vw;   /* larghezza piena del viewport */
+      overflow-x: hidden;  /* blocca lo scroll orizzontale */
+      box-sizing: border-box;  /* evita padding che sfora */
+   }
+
+   iframe {
+      width: 100% !important;
+      max-width: 100%;
+   }
+}
+@media (max-width: 768px) {
+   header img {
+      max-width: 80px;  /* oppure meno, tipo 60px */
+      height: auto;
+   }
+
+   h1 {
+      font-size: 1.2rem;
+      text-align: center;
+   }
+}
+
 @media (max-width: 768px) {
   #conteiner2 {
     width: 100vw;               /* larghezza piena su cellulare */
@@ -504,6 +529,7 @@
      
 
     
+
 
 
 
