@@ -75,6 +75,22 @@
             margin: 4px 0;
             border-radius: 3px;
         }
+         @media (max-width: 768px) {
+  .container-2 {
+    flex-wrap: nowrap; /* impedisce di andare a capo */
+  }
+
+  .home,
+  .bilanci {
+    font-size: 14px;
+  }
+
+  .logo {
+    height: 30px;
+  }
+}
+
+
 
 @media (max-width: 768px) {
    nav {
@@ -142,16 +158,7 @@
          font-weight:400;
       }
 
-      .cerchio {
-         border: 2px solid black; 
-         border-radius: 44%; 
-         width: 182px; 
-         margin-left: 545px;
-         padding-top: 1px; 
-         height: 37px;
-         margin-top: -4.8px;
-         border-width: 1px;;
-      }
+    
 
       #home {
          height: 37px;
@@ -360,9 +367,9 @@
             
          <div>
             <a href="index.html"> <img id="home" src="cas.jpg" alt=""></a> 
-               <div class="cerchio">
+           
                   <p id="CosaFacciamo">Cosa facciamo</p>
-               </div>
+         
             <img id="logo" src="logo2.jpeg" alt=""></div>
          </div>
         
@@ -601,6 +608,7 @@
      
 
     
+
 
 
 
