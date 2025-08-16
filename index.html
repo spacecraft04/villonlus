@@ -75,31 +75,39 @@
             border-radius: 3px;
         }
 
-  @media (max-width: 768px) {
-   nav {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 5px;
+@media (max-width: 768px) {
+   nav h1 {
+      font-size: 0.9rem;
+      line-height: 1.2;
+      margin: 0;
+      white-space: normal; /* permette l'andata a capo */
    }
 
-   nav h1 {
-      font-size: 0.8rem;   /* titolo più piccolo */
-      margin: 0;
-      white-space: nowrap; /* resta tutto su una riga */
+   /* Forza l'andata a capo dopo "opere" */
+   nav h1::after {
+      content: "";
+      display: block;
+   }
+
+   nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px;
    }
 
    nav ul {
       display: flex;
-      flex-wrap: nowrap;
+      flex-direction: row;
       gap: 8px;
       margin: 0;
       padding: 0;
+      flex-wrap: nowrap;
    }
 
    nav ul li a {
-      font-size: 0.7rem;   /* testo menu ridotto */
+      font-size: 0.75rem;
       white-space: nowrap;
    }
 }
@@ -422,6 +430,7 @@
    
      
     
+
 
 
 
