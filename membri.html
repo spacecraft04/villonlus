@@ -251,69 +251,27 @@
            </p>
       </div>
     
-      <div id="Layer1" style="
-    position: relative;
-    bottom: -30px;           /* sposto 30px sotto la base della finestra */
-    left: 0;
-    width: 100%;
-    height: 150px;           /* un po' più alto per coprire */
-    background: rgba(0, 60, 30, 0.9); /* verde scuro trasparente */
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 30px 40px;
-    box-sizing: border-box;
-    color: #cceccc;          /* verde chiarissimo per il testo */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: 0 -5px 15px rgba(0, 40, 10, 0.8);
-    z-index: 9999;
-    ">
-  
-  <!-- Logo + link Home -->
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; width: 140px;">
-    <img src="logo2.jpeg" alt="Logo" style="width: 90px; height: 80px; border-radius: 8px; box-shadow: 0 0 10px #4CAF50;">
-    <a href="/home" style="
-       color: #cceccc; 
-       font-size: 14px; 
-       font-weight: 600; 
-       text-decoration: none;
-       border: 2px solid #4CAF50;
-       padding: 6px 12px;
-       border-radius: 6px;
-       transition: background-color 0.3s, color 0.3s;
-    " 
-       onmouseover="this.style.backgroundColor='#4CAF50'; this.style.color='#003300';" 
-       onmouseout="this.style.backgroundColor='transparent'; this.style.color='#cceccc';"
-    >
-      Torna alla HOME
-    </a>
-  </div>
+   <footer id="Layer1">
+    <!-- Logo + link Home -->
+    <div class="footer-section logo-home">
+        <img src="logo2.jpeg" alt="Logo">
+        <a href="/home">Torna alla HOME</a>
+    </div>
 
-  <!-- Seguici sui social -->
-  <div style="text-align: center; flex-grow: 1; max-width: 300px;">
-    <span style="font-size: 28px; font-weight: 700; display: block; margin-bottom: 12px; text-shadow: 1px 1px 3px #003300;">
-      SEGUICI SU
-    </span>
-    <a href="https://www.facebook.com/profile.php?id=100067935986311" target="_blank" rel="noopener noreferrer" style="display: inline-block; transition: transform 0.3s;">
-      <img src="Facebook_logo.png" alt="Facebook" style="width: 50px; height: 50px; filter: drop-shadow(0 0 3px #004400);">
-    </a>
-  </div>
+    <!-- Seguici sui social -->
+    <div class="footer-section social">
+        <span>SEGUICI SU</span>
+        <a href="https://www.facebook.com/profile.php?id=100067935986311" target="_blank" rel="noopener noreferrer">
+            <img src="Facebook_logo.png" alt="Facebook">
+        </a>
+    </div>
 
-  <!-- Indirizzo -->
-  <div style="
-    border-left: 2px solid #4CAF50;
-    padding-left: 20px;
-    max-width: 240px;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #aee6ae;
-    text-shadow: 0 0 4px #002200;
-  ">
-    <strong style="font-size: 16px; display: block; margin-bottom: 8px;">Villaciambra ONLUS</strong>
-    via Altofonte, 64 - Villaciambra<br>
-    90046 Monreale
-  </div>
-</div>
+    <!-- Indirizzo -->
+    <div class="footer-section address">
+        <strong>Villaciambra ONLUS</strong>
+        <p>via Altofonte, 64 - Villaciambra<br>90046 Monreale</p>
+    </div>
+</footer>
 
    
      
@@ -330,14 +288,21 @@
       })();
     
     </script>
+
  
- </body>
+ 
+</body>
 </html>
 
  
    
      
+    
+
+   
+     
 
     
+
 
 
