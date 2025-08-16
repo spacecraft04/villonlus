@@ -145,17 +145,7 @@
          font-weight:400;
       }
 
-      .cerchio {
-         border: 2px solid black; 
-         border-radius: 45%; 
-         width: 110px; 
-         margin-left: 580px;
-         padding-top: 1px; 
-         height: 37px;
-         margin-top: -4.8px;
-         border-width: 1px;
-      }
-
+  
       #home {
          height: 37px;
          width: 37px;
@@ -314,61 +304,20 @@
   margin: 0;
 }
 /* Responsive mobile */
-        @media (max-width: 768px) {
-   .contenitore1,
-   .contenitore2 {
-      width: 100vw;   /* larghezza piena del viewport */
-      overflow-x: hidden;  /* blocca lo scroll orizzontale */
-      box-sizing: border-box;  /* evita padding che sfora */
-   }
-
-   iframe {
-      width: 100% !important;
-      max-width: 100%;
-   }
-}
-@media (max-width: 768px) {
-   header img {
-      max-width: 80px;  /* oppure meno, tipo 60px */
-      height: auto;
-   }
-
-   h1 {
-      font-size: 1.2rem;
-      text-align: center;
-   }
-}
-
-@media (max-width: 768px) {
-  #conteiner2 {
-    width: 100vw;               /* larghezza piena su cellulare */
-    padding: 10px 0;            /* meno alto */
-    margin-top: 15px;           /* leggermente più in basso */
-    background-size: cover;     /* per evitare overflow sfondo */
+      @media (max-width: 768px) {
+  .container-2 {
+    flex-wrap: nowrap; /* impedisce di andare a capo */
   }
 
-  #testata-bilanci {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
+  .home,
+  .bilanci {
+    font-size: 14px;
   }
 
-  #logo,
-  #home {
-    width: 30px;   /* più piccoli */
+  .logo {
     height: 30px;
   }
-
-  #Bilanci {
-    font-size: 1rem;  /* carattere più piccolo */
-  }
-
-  body {
-    font-size: 0.9rem; /* testo generale più piccolo */
-  }
 }
-
 
 
     /* RESPONSIVE */
@@ -529,6 +478,7 @@
      
 
     
+
 
 
 
