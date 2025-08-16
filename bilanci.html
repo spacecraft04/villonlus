@@ -290,51 +290,43 @@
     margin: 0 auto;
 }
 
-  @media (max-width: 768px) {
-  #conteiner {
-      width: 95%;
-      padding: 10px;
-      margin: 0 auto;
-      text-align: center;
+
+#testata-bilanci {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: -15px;
+}
+
+/* Riadattiamo le dimensioni di logo e home */
+#logo, #home {
+  width: 50px;
+  height: 50px;
+}
+
+/* Lo stile della scritta Bilanci */
+#Bilanci {
+  font-size: 1.6rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+/* Responsive mobile */
+@media (max-width: 768px) {
+  #testata-bilanci {
+    gap: 12px;
+    margin-top: 10px;
   }
 
-  #conteiner2 {
-      height: auto;
-      padding: 10px 5px;
-      position: static; /* Rimuove il posizionamento relativo */
-      margin: 0 auto;
-      text-align: center;
-      border: none; /* Opzionale: puoi tenerlo o toglierlo */
-  }
-
-  .cerchio {
-      width: 100px;
-      height: auto;
-      margin: 10px auto;
-      text-align: center;
-      font-size: 0.9rem;
-      padding: 5px 0;
+  #logo, #home {
+    width: 40px;
+    height: 40px;
   }
 
   #Bilanci {
-      font-size: 1.1rem;
-      margin: 0;
-  }
-
-  #home {
-      width: 30px;
-      height: 30px;
-      position: static;
-      margin: 5px auto;
-      display: block;
-  }
-
-  #logo {
-      width: 45px;
-      height: 45px;
-      position: static;
-      margin: 5px auto;
-      display: block;
+    font-size: 1.1rem;
   }
 }
 
@@ -419,15 +411,14 @@
        
 
     <div id="conteiner">
-        <div id="conteiner2">
-            
-        <div >
-           <a href="index.html"> <img id="home" src="cas.jpg" alt=""></a> 
-           <div class="cerchio">
-               <p id="Bilanci">Bilanci</p>
-           </div>
-           <img id="logo" src="logo2.jpeg" alt=""></div>
-        </div>
+       <div id="conteiner2">
+  <div id="testata-bilanci">
+    <img id="logo" src="logo2.jpeg" alt="Logo">
+    <a href="index.html"><img id="home" src="cas.jpg" alt="Home"></a>
+    <div id="Bilanci">Bilanci</div>
+  </div>
+</div>
+
         
       
            <p> 
@@ -498,6 +489,7 @@
      
 
     
+
 
 
 
