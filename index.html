@@ -78,39 +78,43 @@
         }
 
 @media (max-width: 768px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    padding: 5px 10px;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
+   nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; /* titolo in alto a sinistra */
+      padding: 8px;
+   }
 
-  header h1, header .logo {
-    font-size: 0.9rem;
-    margin: 0;
-    white-space: nowrap;
-  }
+  nav h1 {
+      font-size: 0.7rem;
+      line-height: 1.2;
+      margin: 0;
+      white-space: normal;
+   }
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;            /* più spazio tra i link */
+      margin-left:15px;
+      padding: 0;
+      flex-wrap: nowrap;
+      margin:0;
+   }
 
-  nav {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-  }
+   nav ul li a {
+      font-size: 0.75rem;
+      white-space: nowrap;
+   }
 
-  nav a {
-    font-size: 0.8rem;
-    padding: 4px 6px;
-    white-space: nowrap;
-  }
+
+   /* Forza l'andata a capo SOLO in mobile */
+   .mobile-break {
+      display: block;
+   }
 }
 
-
+  
         /* SEZIONI */
         .section {
             padding: 40px 20px;
@@ -399,7 +403,7 @@
     <!-- Indirizzo -->
     <div class="footer-section address">
         <strong>Villaciambra ONLUS</strong>
-        <p>piazza parrocchia, 13 - Villaciambra<br>90046 Monreale</p>
+        <p>piazza parrocchia,13 - Villaciambra<br>90046 Monreale</p>
     </div>
 </footer>
 
@@ -423,11 +427,8 @@
  
 </body>
 </html>
-
- 
-   
-     
     
+
 
 
 
