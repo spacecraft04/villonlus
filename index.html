@@ -76,35 +76,35 @@
         }
 
 @media (max-width: 768px) {
-   nav h1 {
-      font-size: 0.8rem;
-      line-height: 1.2;
-      margin: 1%;
-      white-space: normal; /* permette l'andata a capo */
-   }
-
-   /* Forza l'andata a capo dopo "opere" */
-   nav h1::after {
-      content: "";
-      display: block;
-   }
-
    nav {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start; /* titolo in alto a sinistra */
       padding: 8px;
    }
+
+  nav h1 {
+      font-size: 0.9rem;
+      line-height: 1.2;
+      margin: 0;
+      white-space: normal;
+   }
+
+   /* Forza l'andata a capo SOLO in mobile */
+   .mobile-break {
+      display: block;
+   }
+}
 
    nav ul {
       display: flex;
       flex-direction: row;
-      gap: 8px;
-      margim-ledt: 2%;
-       margin-right:0;
+      gap: 10px;            /* più spazio tra i link */
+      margin: 0;
       padding: 0;
       flex-wrap: nowrap;
+      margin-left: 15px;    /* distacco extra dal titolo */
    }
 
    nav ul li a {
@@ -112,6 +112,7 @@
       white-space: nowrap;
    }
 }
+
 
 
         /* SEZIONI */
@@ -431,6 +432,7 @@
    
      
     
+
 
 
 
