@@ -242,20 +242,42 @@
     }
 
     /* RESPONSIVE */
-    @media (max-width: 768px) {
-        #Layer1 {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .footer-section {
-            max-width: 100%;
-        }
-
-        .social span {
-            font-size: 22px;
-        }
+   @media (max-width: 768px) {
+    #Layer1 {
+        flex-direction: row;     /* rimane tutto in riga */
+        flex-wrap: wrap;         /* se non ci sta, va a capo con armonia */
+        justify-content: center; /* centra gli elementi */
+        gap: 20px;               /* spazio tra le sezioni */
+        padding: 15px;           /* margine interno ridotto */
+        text-align: center;
     }
+
+    .footer-section {
+        flex: 1 1 auto;   /* permette di adattarsi allo spazio */
+        max-width: 200px; /* ogni blocco ha larghezza gestibile */
+        margin: 5px;      /* spazio intorno */
+    }
+
+    .social span {
+        font-size: 18px; /* testo un po’ più piccolo */
+    }
+
+    .address {
+        font-size: 12px; /* testo più compatto */
+        line-height: 1.4;
+    }
+
+    .logo-home img {
+        width: 70px;
+        height: auto;
+    }
+
+    .logo-home a {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+
 </style>
 
      
@@ -375,4 +397,5 @@
    
      
     
+
 
