@@ -290,39 +290,52 @@
     margin: 0 auto;
 }
 
-    @media (max-width: 768px) {
-    #conteiner {
-        width: 95%;
-        padding: 10px;
-    }
+  @media (max-width: 768px) {
+  #conteiner {
+      width: 95%;
+      padding: 10px;
+      margin: 0 auto;
+      text-align: center;
+  }
 
-    #conteiner2 {
-        height: auto;
-        padding: 10px 5px;
-    }
+  #conteiner2 {
+      height: auto;
+      padding: 10px 5px;
+      position: static; /* Rimuove il posizionamento relativo */
+      margin: 0 auto;
+      text-align: center;
+      border: none; /* Opzionale: puoi tenerlo o toglierlo */
+  }
 
-    .cerchio {
-        width: 90px;
-        height: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 0.8rem;
-    }
+  .cerchio {
+      width: 100px;
+      height: auto;
+      margin: 10px auto;
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 5px 0;
+  }
 
-    #Bilanci {
-        font-size: 1rem;
-    }
+  #Bilanci {
+      font-size: 1.1rem;
+      margin: 0;
+  }
 
-    #home {
-        width: 30px;
-        height: 30px;
-        bottom: 10px;
-    }
+  #home {
+      width: 30px;
+      height: 30px;
+      position: static;
+      margin: 5px auto;
+      display: block;
+  }
 
-    #logo {
-        width: 40px;
-        height: 40px;
-    }
+  #logo {
+      width: 45px;
+      height: 45px;
+      position: static;
+      margin: 5px auto;
+      display: block;
+  }
 }
 
 
@@ -485,6 +498,7 @@
      
 
     
+
 
 
 
