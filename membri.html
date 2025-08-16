@@ -75,6 +75,14 @@
             margin: 4px 0;
             border-radius: 3px;
         }
+            .responsive-img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 
 @media (max-width: 768px) {
    nav {
@@ -165,27 +173,6 @@
          left: 0px; /* posizionamento assoluto a sinistra all'interno del contenitore */
          bottom:15px;
       }
-        @media (max-width: 768px) {
-  #conteiner2 {
-    flex-direction: column; /* metti tutto in colonna su mobile */
-    gap: 15px;
-  }
-
-  .cerchio {
-    width: 80px;
-    height: 80px;
-    font-size: 1rem;
-  }
-
-  #logo, #home {
-    max-width: 60px;
-  }
-
-  .membri-img {
-    width: 100%;
-  }
-}
-
 
       #logo {
          height: 58px;
@@ -379,7 +366,7 @@
       </nav>
        
 
-    <div style="background-color: rgb(204, 204, 204);"><img src="pasticcio_big.jpg" alt="" style="height:2000px;width: 100%;"></div>
+    <div style="background-color: rgb(204, 204, 204);"><img src="pasticcio_big.jpg" alt="" class="responsive-img"></div>
     <div id="conteiner">
         <div id="conteiner2">
             <div>
@@ -392,7 +379,7 @@
         
       
            <p> 
-            <img src="membriimg.jpeg" alt="" style="width: 1000px; height: 290px;"> </div>
+            <img src="membriimg.jpeg" alt="" class="responsive-img"> </div>
            </p>
       </div>
     
@@ -442,15 +429,6 @@
  
    
      
-    
-
-   
-     
-
-    
-
-
-
 
 
 
