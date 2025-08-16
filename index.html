@@ -242,41 +242,42 @@
     }
 
     /* RESPONSIVE */
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
     #Layer1 {
-        flex-direction: row;     /* rimane tutto in riga */
-        flex-wrap: wrap;         /* se non ci sta, va a capo con armonia */
-        justify-content: center; /* centra gli elementi */
-        gap: 20px;               /* spazio tra le sezioni */
-        padding: 15px;           /* margine interno ridotto */
+        flex-direction: row;     /* tutto in riga sempre */
+        flex-wrap: nowrap;       /* niente a capo */
+        justify-content: space-between; /* margine uniforme tra sezioni */
+        padding: 10px 15px;     
         text-align: center;
+        overflow-x: auto;        /* permette di scrollare se troppo stretto */
     }
 
     .footer-section {
-        flex: 1 1 auto;   /* permette di adattarsi allo spazio */
-        max-width: 200px; /* ogni blocco ha larghezza gestibile */
-        margin: 5px;      /* spazio intorno */
+        flex: 0 0 auto;          /* larghezza minima fissa */
+        margin: 0 10px;          /* margine tra le sezioni */
+        text-align: center;
     }
 
     .social span {
-        font-size: 18px; /* testo un po’ più piccolo */
+        font-size: 16px;
     }
 
     .address {
-        font-size: 12px; /* testo più compatto */
-        line-height: 1.4;
+        font-size: 12px;
+        line-height: 1.3;
     }
 
     .logo-home img {
-        width: 70px;
+        width: 60px;
         height: auto;
     }
 
     .logo-home a {
         font-size: 12px;
-        padding: 4px 8px;
+        padding: 3px 6px;
     }
 }
+
 
 </style>
 
@@ -397,5 +398,6 @@
    
      
     
+
 
 
