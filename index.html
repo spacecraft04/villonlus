@@ -79,39 +79,38 @@
 
 @media (max-width: 768px) {
    nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start; /* titolo in alto a sinistra */
-      padding: 8px;
+      width: 100vw; /* larghezza completa */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 15px; /* altezza aumentata */
+      gap: 10px;
+      text-align: center;
    }
 
-  nav h1 {
-      font-size: 0.7rem;
-      line-height: 1.2;
+   nav h1 {
+      font-size: 1.3rem; /* più grande per cellulare */
       margin: 0;
-      white-space: normal;
+      line-height: 1.2;
+      color: rgb(14, 80, 14);
    }
-    nav ul {
-      display: flex;
-      flex-direction: row;
-      gap: 5px;            /* più spazio tra i link */
-      margin-left:25px;
-        margin-top: 20px;
+
+   nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
       padding: 0;
-      flex-wrap: nowrap;
-      margin:0;
+   }
+
+   nav ul li {
+      margin: 0;
    }
 
    nav ul li a {
-      font-size: 0.6rem;
-      white-space: nowrap;
-   }
-
-
-   /* Forza l'andata a capo SOLO in mobile */
-   .mobile-break {
-      display: block;
+      font-size: 1rem; /* più grande su mobile */
+      color: rgb(14, 80, 14);
+      font-weight: bold;
    }
 }
 
@@ -433,6 +432,7 @@
    
      
     
+
 
 
 
