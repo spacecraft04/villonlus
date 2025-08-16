@@ -75,20 +75,25 @@
             border-radius: 3px;
         }
 
-        @media (max-width: 768px) {
-   nav {
-      padding: 15px;
-   }
+       @media (max-width: 768px) {
+    nav h1 {
+        white-space: normal; /* permette il capo */
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    nav h1 br {
+        display: inline; /* permettere <br> per andare a capo */
+    }
 
-   nav h1 {
-     white-space: normal; /* permette di andare a capo */
-      text-align: center;
-      font-size: 1.3rem;
-   }
+    nav ul {
+        margin-top: 5px; 
+        justify-content: center;
+        gap: 20px; /* margine tra link */
+    }
 
-   nav ul li a {
-      font-size: 14px; /* link più piccoli su telefono */
-   }
+    nav ul li a {
+        font-size: 18px;
+    }
 }
 
         /* SEZIONI */
@@ -244,18 +249,18 @@
     /* RESPONSIVE */
   @media (max-width: 768px) {
     #Layer1 {
-        flex-direction: row;     /* tutto in riga sempre */
-        flex-wrap: nowrap;       /* niente a capo */
-        justify-content: space-between; /* margine uniforme tra sezioni */
-        padding: 10px 15px;     
+        flex-direction: row;    /* sempre in riga */
+        flex-wrap: nowrap;      /* niente a capo */
+        justify-content: space-between;
+        padding: 10px 15px;
+        overflow-x: auto;       /* scroll orizzontale se necessario */
         text-align: center;
-        overflow-x: auto;        /* permette di scrollare se troppo stretto */
     }
 
     .footer-section {
-        flex: 0 0 auto;          /* larghezza minima fissa */
-        margin: 0 10px;          /* margine tra le sezioni */
-        text-align: center;
+        flex: 0 0 auto;         /* larghezza minima fissa */
+        margin: 0 15px;         /* margine tra le sezioni */
+        min-width: 120px;       /* assicura che l’indirizzo non venga tagliato */
     }
 
     .social span {
@@ -398,6 +403,7 @@
    
      
     
+
 
 
 
